@@ -1,0 +1,4 @@
+com\shtohryn\web\rest\CopterRemoteControllServiceREST.class
+com\shtohryn\web\soap\CopterRemoteControllService.class
+com\shtohryn\web\rest\CopterRemoteControllService.class
+com\shtohryn\web\soap\CopterRemoteControllServiceImpl.class

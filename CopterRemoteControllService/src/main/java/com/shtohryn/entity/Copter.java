@@ -4,9 +4,15 @@ public class Copter {
     private int coordinateX;
     private int coordinateY;
     private int coordinateZ;
-    private int limit;
+    private final int LIMIT=100;
 
     public Copter() {
+    }
+
+    public Copter(int coordinateX, int coordinateY, int coordinateZ) {
+        this.coordinateX = coordinateX;
+        this.coordinateY = coordinateY;
+        this.coordinateZ = coordinateZ;
     }
 
     public int getCoordinateX() {
@@ -14,15 +20,16 @@ public class Copter {
     }
 
     public void setCoordinateX(int coordinateX) {
-        this.coordinateX = this.coordinateX >= 100 ? coordinateX : 100;
+        this.coordinateX = this.coordinateX >= 90 ? LIMIT : coordinateX;
     }
 
     public int getCoordinateY() {
         return coordinateY;
     }
 
+
     public void setCoordinateY(int coordinateY) {
-        this.coordinateY = getCoordinateX() >= limit ? coordinateY : limit;
+        this.coordinateY = this.coordinateY >= 90 ? LIMIT : coordinateY;
     }
 
     public int getCoordinateZ() {
@@ -30,15 +37,9 @@ public class Copter {
     }
 
     public void setCoordinateZ(int coordinateZ) {
-        this.coordinateZ = getCoordinateZ() >= 100 ? coordinateZ : 100;
+        this.coordinateZ = this.coordinateZ >= 90 ? LIMIT : coordinateZ;
     }
 
-    public Copter(int coordinateX, int coordinateY, int coordinateZ) {
-        this.coordinateX = coordinateX;
-        this.coordinateY = coordinateY;
-        this.coordinateZ = coordinateZ;
-        this.limit = 100;
-    }
 
     @Override
     public String toString() {
@@ -48,4 +49,5 @@ public class Copter {
                 ", Z=" + coordinateZ +
                 '}';
     }
+
 }

@@ -9,29 +9,38 @@ public class CommandReceiver {
     private static Logger logger = LogManager.getLogger(CommandReceiver.class);
 
     private int x = 15;
-    private int limit = 100;
 
-    public void moveDirectUp() {
+    public String moveDirectUp() {
         copter.setCoordinateZ((copter.getCoordinateZ() + x));
         logger.info(copter.toString());
+        return copter.toString();
     }
 
-    public void moveDirectDown() {
+    public String moveDirectDown() {
         copter.setCoordinateZ((copter.getCoordinateZ() - x));
         logger.info(copter.toString());
+        return copter.toString();
     }
 
-    public void moveDirectForward() {
+    public String moveDirectForward() {
         copter.setCoordinateX((copter.getCoordinateX() + x));
         logger.info(copter.toString());
+        return copter.toString();
     }
 
-    public void moveDirectBack() {
+    public String moveDirectBack() {
         copter.setCoordinateX((copter.getCoordinateX() - x));
         logger.info(copter.toString());
+        return copter.toString();
     }
 
-    public void stop() {
-        System.out.println(copter.toString());
+    public String printCopterCoordinates() {
+        return copter.toString();
+    }
+
+    public String stop() {
+        copter.setCoordinateZ(0);
+        logger.info(copter.toString());
+        return copter.toString();
     }
 }

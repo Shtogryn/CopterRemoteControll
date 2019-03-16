@@ -1,0 +1,11 @@
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\entity\Copter.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\web\rest\CopterRemoteControllService.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\exceptions\ComandException.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\execute\Command.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\web\soap\CopterRemoteControllServiceImpl.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\dataProvider\DataReader.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\web\rest\CopterRemoteControllServiceREST.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\execute\CommandImp.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\receiver\CommandReceiver.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\web\soap\CopterRemoteControllService.java
+C:\Users\user\IdeaProjects\CopterRemoteControll\CopterRemoteControllService\src\main\java\com\shtohryn\dataProvider\CsvCommandReader.java
