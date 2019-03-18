@@ -3,7 +3,9 @@ package com.shtohryn.receiver;
 import com.shtohryn.entity.Copter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class CommandReceiver {
     private Copter copter = new Copter();
     private static Logger logger = LogManager.getLogger(CommandReceiver.class);

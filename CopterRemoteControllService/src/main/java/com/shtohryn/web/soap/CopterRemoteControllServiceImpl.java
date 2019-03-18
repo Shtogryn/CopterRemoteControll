@@ -11,7 +11,7 @@ public class CopterRemoteControllServiceImpl implements CopterRemoteControllServ
     private static Logger logger = LogManager.getLogger(CopterRemoteControllServiceImpl.class);
     private static CommandReceiver commandReceiver = new CommandReceiver();
 
-    public void runCopter() throws IOException {
+    public void runCopter()  {
         logger.info("Copter really made the grade");
         CommandReceiver receiver = new CommandReceiver();
         CommandImp concreteCommand = new CommandImp(receiver);

@@ -23,12 +23,12 @@ public class CommandImp implements Command {
     }
 
     @Override
-    public String execute(String command) throws IOException {
+    public String execute(String command) {
         CsvCommandReader csvCommandReader = new CsvCommandReader();
         String res = null;
-        List<String> arrayList = new ArrayList<>();
-        arrayList = csvCommandReader.read();
-        for (String c : arrayList)
+//        List<String> arrayList = new ArrayList<>();
+//        arrayList = csvCommandReader.read();
+       // for (String c : arrayList)
             switch (command) {
                 case "W":
                     logger.info("moveDirectUp method");

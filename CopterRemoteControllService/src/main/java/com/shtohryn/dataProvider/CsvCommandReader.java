@@ -1,6 +1,4 @@
 package com.shtohryn.dataProvider;
-import com.opencsv.CSVReader;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

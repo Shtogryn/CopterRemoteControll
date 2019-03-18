@@ -14,19 +14,19 @@ public class CopterRemoteControllRestServiceImpl {
     @Autowired
     private static CommandImp commandImp = new CommandImp(receiver);
 
-    @RequestMapping(value = "/Copter/POSTcommand",
+    @RequestMapping(value = "/Copter/command",
             method = RequestMethod.POST,
             produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public String setDirect(@RequestBody String command) throws IOException {
+    public String setDirect(@RequestBody String command){
         return commandImp.execute(command);
     }
 
-    @RequestMapping(value = "/Copter/GETcoordinats",
+    @RequestMapping(value = "/Copter/coordinats",
             method = RequestMethod.GET,
             produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
-    public String getCoordinats(@RequestBody String command) throws IOException {
+    public String getCoordinats(@RequestBody String command) {
         return commandImp.execute(command);
     }
 
